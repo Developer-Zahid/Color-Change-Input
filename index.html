@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Auto Color Change Input</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<input type="search" name="color" id="colorChange" class="color-search" placeholder="Color Name </or> #Hex value" spellcheck="false">
+	<script>
+		let colorInput = document.getElementById("colorChange");
+		document.body.style.backgroundColor = "#44bffb";
+		colorInput.addEventListener("input", function(e){
+			document.body.style.backgroundColor = e.target.value;
+		})
+	</script>
+</body>
+</html>
